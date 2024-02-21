@@ -1,10 +1,18 @@
 import './App.scss';
-import Exmaple1 from '../components/exmaple1';
+import ExmapleBody1 from '../components/exmaple1';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div className="App">
-      <Exmaple1/>
+      <Header />
+      <Container>
+        <ExmapleBody1 />
+      </Container>
+      <Footer />
     </div>
   );
 }
